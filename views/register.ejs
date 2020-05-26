@@ -1,0 +1,75 @@
+<%- include('./partials/header')%>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-sm-12 col-md-10 col-lg-9 ">
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    <h1 class="text-center mb-md-5">Sign Up</h1>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 ">
+                            <hr class="d-md-none mt-4">
+                            <h6 class="text-center">Quick Start<small> <i> Basic</i> </small></h6>
+                            <form class="needs-validation" action="/registerform" method="POST" novalidate>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" class="form-control" id="username" placeholder=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter your Username.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="text" name="password" class="form-control" id="password" placeholder=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adminCode">Only Admin</label>
+                                    <input class="form-control" type="text" id="adminCode" name="adminCode"
+                                        placeholder="">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block d-md-none">Sign
+                                    Up</button>
+                                <div class="mt-2 text-center">
+                                    <p>I have an account <a href="/login">Login</a></p>
+                                    <p>I just want to look! <a href="/campgrounds">Check Campgrounds</a></p>
+                                </div>
+                                <hr class="d-md-none mb-4">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 ">
+                            <h6 class="text-center">Enjoy your app at 100%<small> <i> Plus (Optional)</i> </small></h6>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" class="form-control" id="email" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname">First name</label>
+                                <input type="text" name="firstName" class="form-control" id="firstname" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last name</label>
+                                <input type="text" name="lastName" class="form-control" id="lastname" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="avatar">Avatar URL</label>
+                                <input type="text" name="avatar" class="form-control" id="avatar" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"> </div>
+    </div>
+</div>
+
+
+<%- include('./partials/footer')%>
